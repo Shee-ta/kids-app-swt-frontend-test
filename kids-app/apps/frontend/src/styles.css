@@ -1,1 +1,17 @@
 /* You can add global styles to this file, and also import other style files */
+:root {
+    --kopfHintergrund: linear-gradient(to right, rgb(239, 186, 163), rgb(236, 249, 249));
+    --außenRand: 0 10% 0 10%;
+}
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+p, a {
+    font-size: 150%;
+}
+.mat-mdc-menu-trigger {
+    background: none;
+    border: none;
+}

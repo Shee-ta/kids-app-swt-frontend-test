@@ -1,0 +1,78 @@
+<!--
+<div id = "außenblock-kopf">
+    <div id = "kopfzeile">
+        <div id = "kopfzeile-appname">
+            <p>Herne Jugendportal</p>
+        </div>
+        <div id = "kopfzeile-suchleiste">
+            <p>Suche</p>
+        </div>
+        <div id = "kopfzeile-accountbutton">
+            <p>Account</p>
+        </div>
+        <div id = "kopfzeile-menübutton">
+            <p>Menü</p>
+        </div>
+    </div>
+</div>
+<header>
+    <nav>
+        <div>
+            <a [class.active]="isActive('/')" [routerLink]="['/']" id="homeRouterLink">Übersicht</a>
+        </div>
+        <div>
+            <a [class.active]="isActive('/angebote')" [routerLink]="['/angebote']" id="aboutUsRouterLink">Angebote</a>
+        </div>
+        <div>
+            <a [class.active]="isActive('/stadtplan') "[routerLink]="['/stadtplan']" id="dashboardRouterLink">Stadtplan</a>
+        </div>
+        <div>
+            <a [class.active]="isActive('/community') "[routerLink]="['/community']" id="dashboardRouterLink">Community</a>
+        </div>
+    </nav>
+</header>
+-->
+<!-- START Temporär als Beispiel -->
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<!-- ENDE -->
+<mat-toolbar color="primary" class = "kopf_toolbar">
+    <mat-toolbar-row class = "kopf_toolbar_row">
+        <mat-icon class = "kopf_app_logo">home</mat-icon>
+        <span>Appname</span>
+        <button mat-icon-button [matMenuTriggerFor]="kopfAccount" class = "kopf_account_button">
+            <mat-icon>person</mat-icon>
+        </button>
+        <mat-menu #kopfAccount="matMenu" xPosition="before">
+            <button mat-menu-item>
+                <mat-icon>dialpad</mat-icon>
+                <span>Redial</span>
+            </button>
+            <button mat-menu-item>
+                <mat-icon>voicemail</mat-icon>
+                <span>Check voicemail</span>
+            </button>
+            <button mat-menu-item>
+                <mat-icon>notifications_off</mat-icon>
+                <span>Disable alerts</span>
+            </button>
+        </mat-menu>
+        <button mat-icon-button [matMenuTriggerFor]="kopfMenu" class = "kopf_menü_button">
+            <mat-icon>more_vert</mat-icon>
+        </button>
+        <mat-menu #kopfMenu="matMenu" xPosition="before">
+            <button mat-menu-item>
+                <mat-icon>dialpad</mat-icon>
+                <span>Redial</span>
+            </button>
+            <button mat-menu-item>
+                <mat-icon>voicemail</mat-icon>
+                <span>Check voicemail</span>
+            </button>
+            <button mat-menu-item>
+                <mat-icon>notifications_off</mat-icon>
+                <span>Disable alerts</span>
+            </button>
+        </mat-menu>
+    </mat-toolbar-row>
+</mat-toolbar>
+<!-- <app-nav-component></app-nav-component> -->

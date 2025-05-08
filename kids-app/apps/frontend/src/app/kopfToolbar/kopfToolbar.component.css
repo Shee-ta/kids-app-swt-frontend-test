@@ -1,0 +1,26 @@
+
+.kopf_toolbar {
+    background-image: var(--kopfHintergrund);
+}
+.kopf_toolbar_row {
+    min-height: 100px;
+    display: flex;
+    flex-direction: row;
+    border-bottom: 5px black solid;
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    }
+    .kopf_app_logo {
+        font-size: 90px;
+        height: 90px ;
+        width: 90px;
+        margin-right: 1rem;
+    }
+    .kopf_account_button {
+        margin-left: auto;
+        margin-right: 3%;
+    }
+    .kopf_account_button, .kopf_menü_button {
+        transform: scale(2);
+    }
