@@ -1,7 +1,8 @@
 import { Component } from '@angular/core';
 import { RouterLink, RouterOutlet } from '@angular/router';
 import { MatTabsModule } from '@angular/material/tabs';
-import { KopfToolbarComponent } from './kopfToolbar/kopfToolbar.component';
+import { HeadToolbarComponent } from './headToolbar/headToolbar.component';
+import { FooterComponent } from './footer/footer.component';
 interface ILink {
   path: string;
   label: string;
@@ -15,7 +16,8 @@ interface ILink {
     RouterOutlet, 
     MatTabsModule, 
     RouterLink, 
-    KopfToolbarComponent],
+    HeadToolbarComponent,
+    FooterComponent],
 })
 export class AppComponent {
   title = 'Kids App';

@@ -9,7 +9,8 @@ export const routes: Routes = [
     {
         path: 'startseite',
         loadComponent: () =>
-            import('./startseite/startseite.component').then((m) => m.StartseiteComponent),
+            import('./startseite/startseite.component').then(
+                (m) => m.StartseiteComponent),
     },
     {
         path: 'angebote',
@@ -21,7 +22,8 @@ export const routes: Routes = [
     {
         path: 'community',
         loadComponent: () =>
-            import('./community/community.component').then((m) => m.CommunityComponent),
+            import('./community/community.component').then(
+                (m) => m.CommunityComponent),
     },
     {
         path: '**',

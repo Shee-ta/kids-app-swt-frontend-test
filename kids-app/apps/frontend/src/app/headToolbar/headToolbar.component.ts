@@ -4,18 +4,19 @@ import { RouterModule } from '@angular/router';
 import { Router } from '@angular/router';
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import { MatToolbarModule } from '@angular/material/toolbar'; 
+import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 import { MatMenuModule } from '@angular/material/menu'; 
 import { MatTabsModule } from '@angular/material/tabs';
 
 @Component({
-  imports: [RouterModule, MatSlideToggleModule, MatToolbarModule, MatIconModule, MatMenuModule, MatTabsModule],
-  selector: 'app-kopf-toolbar-component',
+  imports: [RouterModule, MatSlideToggleModule, MatToolbarModule, MatIconModule, MatMenuModule, MatTabsModule, MatButtonModule],
+  selector: 'app-head-toolbar-component',
   standalone: true,
-  templateUrl: './kopfToolbar.component.html',
-  styleUrl: './kopfToolbar.component.css',
+  templateUrl: './headToolbar.component.html',
+  styleUrl: './headToolbar.component.css',
 })
-export class KopfToolbarComponent {
+export class HeadToolbarComponent {
 
   URL_HOME: string = "/";
 

@@ -1,17 +1,41 @@
 
-/*
-#main {
-    background-image: url("../geteilt/bilder/banner_temp.png");
+.startPage {
+    background-image: url("/images/banner_temp.png");
     background-attachment: fixed;
     background-size: cover;
-    height: 200vh;
+    min-height: 100vh;
+    width: 100%;
 }
-#inneresMain {
-    margin: var(--außenRand);
+.startPageGrid {
+    height: 100vh;
+    width: auto;
+    margin-left: var(--outerMargin);
+    margin-right: var(--outerMargin);
     display: grid;
-    grid-template-columns: [angebote] 70% [neuigkeiten] 30%;
+    grid-template-columns: minmax(50%, 70%) var(--outerMargin) 30%;
 }
-*/
+.c1, .c3 {
+    height: 100%;
+    background-color: var(--areaBackgroundColour);
+    box-shadow: var(--defaultBoxShadow);
+}
+.c1 > *{
+    margin-top: 2rem;
+}
+.titel {
+    color: var(--contrastColour);
+    text-align: center;
+    text-wrap: wrap;
+}
+.photo {
+    width: 90%;
+    margin: 0% 5% 0% 5%;
+    border-radius: 10px;;
+    box-shadow: var(--defaultBoxShadow);
+}
+.liste > * {
+    height: 1.5rem;
+}
 
 
 

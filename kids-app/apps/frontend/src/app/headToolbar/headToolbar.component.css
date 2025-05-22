@@ -6,10 +6,10 @@
     min-height: 100px;
     display: flex;
     flex-direction: row;
-    border-bottom: 5px black solid;
-    width: 80%;
-    margin-left: 10%;
-    margin-right: 10%;
+    border-bottom: 3px var(--contrastColour) solid;
+    width: auto;
+    margin-left: var(--outerMargin);
+    margin-right: var(--outerMargin);
     }
     .kopf_app_logo {
         font-size: 90px;

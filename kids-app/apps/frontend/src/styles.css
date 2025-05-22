@@ -1,17 +1,18 @@
 /* You can add global styles to this file, and also import other style files */
 :root {
-    --kopfHintergrund: linear-gradient(to right, rgb(239, 186, 163), rgb(236, 249, 249));
-    --außenRand: 0 10% 0 10%;
+    --kopfHintergrund: linear-gradient(to right, rgb(255, 186, 156), rgb(200, 238, 255));
+    --contrastColour: rgb(152, 33, 33);
+    --areaBackgroundColour: rgba(255, 220, 160, 0.674);
+    --backgroundColour: rgb(255, 220, 160);
+    --outerMargin: 10%;
+    --defaultBoxShadow: 0px 0px 4px black;
+    font-family: sans-serif;
+}
+.mat-divider {
+    color: var(--contrastColour);
 }
 * {
     margin: 0;
     padding: 0;
     text-decoration: none;
-}
-p, a {
-    font-size: 150%;
-}
-.mat-mdc-menu-trigger {
-    background: none;
-    border: none;
 }
